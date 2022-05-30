@@ -5,9 +5,14 @@ pipeline {
         }
     }
     stages {
+        stage ('hello world') {
+            steps {
+                echo 'hello world'
+            }
+        }
         stage ('python') {
             steps {
-                sh 'pdython --version'
+                sh 'python --version'
             }
         }
     }
